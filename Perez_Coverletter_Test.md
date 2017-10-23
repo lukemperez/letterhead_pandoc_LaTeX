@@ -31,6 +31,8 @@ To use this letter template correctly, first clone or fork the repo. Then change
 
 <!-- I write to submit my application for the position of Assistant Professor of  F. Price School of Politics. I am an advanced doctoral candidate at the University of Texas in Government with a research focus on religious, ethics, and American foreign policy. I will be defending in the spring of 2018. -->
 
+**And now for some dummy text**
+
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt enim vitae dictum euismod. Cras in porta augue. Quisque id sapien vitae ante vestibulum aliquet. Pellentesque vel hendrerit justo, eget pellentesque metus. In commodo faucibus turpis, at fermentum arcu aliquet vitae. Maecenas purus eros, commodo ut ante ut, bibendum facilisis augue. Vivamus in rhoncus libero. Aenean at ultrices metus, et molestie purus. In mauris diam, lobortis non interdum sed, convallis eu velit. Curabitur eu lobortis nisi.
 
 Phasellus vel ex elit. Vestibulum ac quam nec diam imperdiet convallis. Mauris vitae est porta, interdum augue ut, egestas ipsum. Phasellus urna nisl, vehicula eu sagittis in, sollicitudin ac nunc. In sed dapibus turpis. Quisque nunc purus, congue eu aliquam vitae, venenatis venenatis dolor. Curabitur vitae laoreet augue. Nulla ac augue vitae augue hendrerit gravida. Duis posuere commodo scelerisque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis tempus urna a ipsum consequat vestibulum sed in mauris. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque porta porta mi, et euismod dui venenatis vitae.
