@@ -27,6 +27,8 @@ As well as...
 + Unenumerated
 + Lists
 
+To use this letter template correctly, first clone or fork the repo. Then change whatever items are necessary for you. I've not included the actual university logo that I use, because you'll need to get one for your company or university. But when you look at the template file ```coverletter.tex```, there is an option to insert the logo. Be sure to change any settings for height and width as needed.
+
 <!-- I write to submit my application for the position of Assistant Professor of  F. Price School of Politics. I am an advanced doctoral candidate at the University of Texas in Government with a research focus on religious, ethics, and American foreign policy. I will be defending in the spring of 2018. -->
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt enim vitae dictum euismod. Cras in porta augue. Quisque id sapien vitae ante vestibulum aliquet. Pellentesque vel hendrerit justo, eget pellentesque metus. In commodo faucibus turpis, at fermentum arcu aliquet vitae. Maecenas purus eros, commodo ut ante ut, bibendum facilisis augue. Vivamus in rhoncus libero. Aenean at ultrices metus, et molestie purus. In mauris diam, lobortis non interdum sed, convallis eu velit. Curabitur eu lobortis nisi.
