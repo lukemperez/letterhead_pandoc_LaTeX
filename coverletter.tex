@@ -1,0 +1,107 @@
+%!TEX program = xelatex
+% Scott's letterhead template. Requires that Miami logo and signature file be
+% installed within the LaTeX directory structure. The "letter" class is used
+% because it allows for spacing between paragraphs, but properly line breaks at
+% the end of paragraphs (the articles class tends to avoid full lines at the
+% ends of paragraphs, for some reason).
+
+\documentclass[$size$]{letter}
+\usepackage[letterpaper,margin=1in]{geometry}
+
+\usepackage{fixltx2e}
+
+% Adds microtypography features: character protrusion, for XeTeX.
+\usepackage{microtype}
+
+% Allows links.
+\usepackage[usenames,dvipsnames]{color}
+\usepackage[xetex, bookmarks, colorlinks, breaklinks]{hyperref}
+\hypersetup{colorlinks=true, urlcolor=NavyBlue, linkcolor=NavyBlue}
+
+\urlstyle{rm}
+
+\frenchspacing{}        % Remove extra spaces after periods.
+\pagestyle{empty}       % Remove page numbers.
+
+% load png file for logo
+\usepackage{graphicx}
+\usepackage{fontspec}
+% \defaultfontfeatures{Mapping=tex-text}  % Sets quotation marks.
+% \setromanfont{Linux Libertine O}
+% \setsansfont[BoldFont={Helvetica Neue Bold}]{Helvetica Neue}
+% \setmonofont[Scale=MatchLowercase]{Inconsolata}
+
+% From default template
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\newcommand\shyp{\-}
+
+\newcommand{\header}[0]{
+    {\hypersetup{hidelinks}
+    \noindent
+    \parbox[b][0.625in][t]{6.5in}{
+        \vspace{-0.375in}
+        \parbox[b][0.625in][t]{3.74in}
+            {\href{http://www.utexas.edu}
+            {\includegraphics[height=0.5in]{Government.png}}}\hfill
+        \parbox[b][0.625in][t]{1.72in}{
+            \setlength{\baselineskip}{9pt}
+            \fontsize{8pt}{8pt}{
+                \fontspec{Helvetica}
+                \href{http://www.lukemperez.com}{\textbf{Luke M. Pérez}}\\
+                \href{https://liberalarts.utexas.edu/government/}{Department of Government} \vspace{6pt}\\
+                158 W. 21\textsuperscript{st} St. Stop A1800\\
+                Austin, TX 78712\\
+                (310) 367--1348\\
+                \href{mailto:lukemperez@utexas.edu}{lukemperez@utexas.edu}
+                }
+            }
+        }}
+    }
+
+$if(draft)$
+\usepackage{draftwatermark}
+\SetWatermarkLightness{0.9}
+$endif$
+
+\begin{document}
+
+\header
+\vspace{0.2in}
+
+\today
+
+$for(toadd)$$toadd$$sep$\\$endfor$
+
+$for(subject)$
+Subject: $subject$
+$endfor$
+
+$greeting$,
+
+$body$
+
+$if(sig.include)$
+    \begin{minipage}[t]{6.5in}
+    Kindest Regards,\\
+    $if(sig.sign)$
+        \vspace{-0.2in}\includegraphics{/Users/hartlecs/.pandoc/images/sig}
+    $else$
+        \\
+    $endif$
+    \\
+    $name$\\
+    $sig.post$
+    \end{minipage}
+$endif$
+
+$if(cc)$
+    cc: $for(cc)$$cc$$sep$, $endfor$
+$endif$
+
+$if(ps)$
+    $ps$
+$endif$
+
+\end{document}
